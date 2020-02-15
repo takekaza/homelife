@@ -1,0 +1,30 @@
+.immain_home
+  .immain_center
+    .immain_center--image
+      %p.imtop
+        Images
+      %h3.imdown
+        Homes Bot
+  .immain_middle
+    .immain_middle--box
+      %ul.immain_middle--box--ul
+        - @home.each do |home|
+          %li.immain_middle--box--ul--li
+            = link_to "#", class: "immain_middle--box--ul--li--link" do
+              .immain_middle--box--ul--li--link--content
+                .immain_middle--box--ul--li--link--content--top
+                  %span.immain_middle--box--ul--li--link--content--top--name
+                    @ #{home.user.name}
+                  %span.immain_middle--box--ul--li--link--content--top--like
+                    いいね
+                .immain_middle--box--ul--li--link--content--text
+                  = home.text
+                .immain_middle--box--ul--li--link--content--photo
+                  - home.images.first(5).each do |image|
+                    .immain_middle--box--ul--li--link--content--photo--box
+                      = image_tag "#{image.url}", class: "immain_middle--box--ul--li--link--content--photo--box--subimg", alt:"logo"
+
+                  .immain_middle--box--ul--li--link--content--photo--top
+                    - home.images.first(1).each do |image|
+                      = image_tag "#{image.url}", class: "immain_middle--box--ul--li--link--content--photo--top--mainimg", alt:"logo"
+

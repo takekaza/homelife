@@ -1,0 +1,15 @@
+.side_bar
+  .side_bar_box
+    %ul.line__btn
+      %li.line__btn__li
+        =link_to new_home_path, class: "line__btn__li__image" do
+          = icon('far', 'image', class: "line__btn__li__image--icon")
+      %li.line__btn__li
+        =link_to "https://www.facebook.com/", class: "line__btn__li" do
+          = icon('fab', 'facebook-square', class: "line__btn__li--icon fa-rotate-90")
+      %li.line__btn__li
+        =link_to "https://twitter.com/", class: "line__btn__li" do
+          = icon('fab', 'twitter', class: "line__btn__li--icon fa-rotate-90")
+      %li.line__btn__li
+        =link_to "https://www.instagram.com/", class: "line__btn__li" do
+          = icon('fab', 'instagram', class: "line__btn__li--icon fa-rotate-90")

@@ -1,0 +1,21 @@
+.login
+  %h2 HomeFit
+  %h3 Log in
+  = render "devise/shared/links"
+  .login-form
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field
+        .field-label
+          = f.label :email
+        .field-input
+          = f.email_field :email, autofocus: true
+      .field
+        .field-label
+          = f.label :password
+        .field-input
+          = f.password_field :password, autocomplete: "off"
+      .actions
+        = f.submit "Log in", class: 'btn'
+
+  %a.forgot{:href => "#"} Already have an account?
+  %h6 (Passwordは英数字8文字以上)
