@@ -176,10 +176,9 @@
         &--li{
           margin: 30px 0 0 60px;
           width: 40%;
-          height: 350px;
+          height: 430px;
           display: inline-block;
           background-color: white;
-          cursor: pointer;
           border-radius: 6%;
           box-shadow: 0 0 5px 0 rgba(0,0,0,.12), 0 2px 5px 0 rgba(0,0,0,.22);
           transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
@@ -204,30 +203,40 @@
             &--content{
               font-size: 13px;
               height: 100%;
-              &--top{
-                font-size: 12px;
-                height: 20px;
-                margin: 7px;
-                display: flex;
-                justify-content: space-between;
-                text-align: center;
-                &--name{
+              &--a{
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+                &--top{
                   font-size: 12px;
-                  height: 30px;
+                  height: 20px;
+                  margin: 7px;
+                  display: flex;
+                  justify-content: space-between;
+                  text-align: center;
+                  &--name{
+                    font-size: 12px;
+                    height: 30px;
+                  }
+                  &--like{
+                    font-size: 10px;
+                    height: 30px;
+                    width: 60px;
+                  }
                 }
-                &--like{
-                  font-size: 10px;
-                  height: 30px;
-                  width: 60px;
+                &--text{
+                  font-size: 12px;
+                  height: 70px;
+                  background-color: whitesmoke;
+                  box-shadow: 0 0 5px 0 rgba(0,0,0,.12), 0 2px 5px 0 rgba(0,0,0,.22);
+                  border-radius: 5px;
+                  margin: 0 6px;
+                  padding: 7px;
                 }
-              }
-              &--text{
-                font-size: 12px;
-                height: 70px;
-                background-color: whitesmoke;
-                box-shadow: 0 0 5px 0 rgba(0,0,0,.12), 0 2px 5px 0 rgba(0,0,0,.22);
-                border-radius: 5px;
-                margin: 0 6px;
+                &:hover{
+                  background-color: black;
+                  opacity: 0.7;
+                }
               }
               &--photo{
                 height: 170px;
@@ -236,14 +245,15 @@
                   height: 40px;
                   padding: 3px 7px;
                   &--subimg{
-                    padding: 3px 7px;
+                    padding: 1px 7px 0;
                     width: 50px;
+                    height: 40px;
                     // object-fit: cover;
                   }
                 }
                 &--top{
-                  padding: 4px 28px;
-                  height: 200px;
+                  padding: 5px 28px;
+                  height: 280px;
                   @media screen and (max-width : 500px){
                     height: 220px;
                   }

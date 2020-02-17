@@ -1,5 +1,5 @@
 $(function() {
-  $('img.immain_middle--box--ul--li--link--content--photo--box--subimg').hover(function(){
+  $('img.immain_middle--box--ul--li--link--content--photo--box--subimg').mouseover(function(){
   // "_thumb"を削った画像ファイル名を取得
   var selectedSrc = $(this).attr('src').replace(/^(.+)(\.gif|\.jpg|\.png+)$/, "$1"+"$2");
 

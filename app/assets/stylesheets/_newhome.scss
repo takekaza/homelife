@@ -1,6 +1,6 @@
-.bodyitemsell{
-  position: relative;
-  min-height: 100%;
+.bodynew{
+  // position: relative;
+  // min-height: 100%;
   background: #f0f0f0;
   font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
   font-size: 14px;
@@ -10,7 +10,17 @@
     width: 700px;
   }
 }
-.add-item{
+.bodynew .effect-scroll{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.new_home{
+  // width: 100vw;
+  // height: 100vh;
+}
+.add-home{
+  // width: 100vw;
+  // height: 100vh;
   &__header{
     height: 100px;
     width: 700px;
@@ -36,12 +46,12 @@
     display: block;
     margin: 0 auto 20px;
     max-width: 700px;
-    border-radius: 10px;
+    border-radius: 40px;
     background: #f0f0f0;
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
                 3px 3px 5px rgba(0, 0, 0, 0.1);
     @media screen and (max-width : 700px){
-      margin: 0 60px 20px 60px;
+      margin: 150px 60px 20px 60px;
     }
     &--top{
       padding: 32px 16px;
@@ -285,6 +295,7 @@
       }
     }
   }
+  
   &__footer{
     z-index: 1;
     height: 250px;

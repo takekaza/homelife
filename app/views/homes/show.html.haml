@@ -1,0 +1,28 @@
+.wrapper
+  = render 'side_bar'
+  = render "header"
+  .show_home
+    .show_center
+      
+    .show_middle
+      .show_middle--box
+        %ul.show_middle--box--ul
+          %li.show_middle--box--ul--lishow
+            .show_middle--box--ul--lishow--link
+              .show_middle--box--ul--lishow--link--content
+                = link_to "#", class: "show_middle--box--ul--lishow--link--content--a" do
+                  .show_middle--box--ul--lishow--link--content--a--top
+                    %span.show_middle--box--ul--lishow--link--content--a--top--name
+                      @ #{@home.user.name}
+                    %span.show_middle--box--ul--lishow--link--content--a--top--like
+                      いいね
+                  .show_middle--box--ul--lishow--link--content--a--text
+                    = @home.text
+                .show_middle--box--ul--lishow--link--content--photo
+                  - @home.images.first(5).each do |image|
+                    .show_middle--box--ul--lishow--link--content--photo--box
+                      = image_tag "#{image.url}", class: "show_middle--box--ul--lishow--link--content--photo--box--subimg", alt:"logo"
+
+                  .show_middle--box--ul--lishow--link--content--photo--top
+                    - @home.images.first(1).each do |image|
+                      = image_tag "#{image.url}", class: "show_middle--box--ul--lishow--link--content--photo--top--mainimg", alt:"logo"

@@ -1,62 +1,63 @@
-.bodyitemsell
+.wrapper
   = form_for [@home] do |f|
-    .add-item__header
-      = link_to root_path, class: "buy-items__header--logo" do
-        -# = image_tag "fmarket_logo_red.svg", class: "buy-items__header--logo", alt:"logo"
-    .add-item__main
-    
-      .add-item__main--top
+    .bodynew
+      .add-home__header
+        = link_to root_path, class: "buy-home__header--logo" do
+          -# = image_tag "fmarket_logo_red.svg", class: "buy-homes__header--logo", alt:"logo"
+      .add-home__main
       
-        %h1
-          投稿してみよう！
-      
-      .add-item__main--bottom
-        .add-item__main--bottom--image
-          .upload__text
-            %h3.form-top
-              写真をアップロード
-              .form-require
-                %span 必須
-            .upload__text--text
-              最大6枚までアップロードできます
-            
-            .upload__image
-              .previews
+        .add-home__main--top
+        
+          %h1
+            投稿してみよう！
+        
+        .add-home__main--bottom
+          .add-home__main--bottom--image
+            .upload__text
+              %h3.form-top
+                写真をアップロード
+                .form-require
+                  %span 必須
+              .upload__text--text
+                最大6枚までアップロードできます
+              
+              .upload__image
+                .previews
+                  - if @home.persisted?
+                    - @home.images.each_with_index do |image, i|
+                      = image_tag image.url.url, data: { index: i }, width: "100", height: '100'
+                =f.fields_for :images do |image|
+                  .js-file_group{"data-index" => "#{image.index}"}
+                    =image.file_field :url, class:'upload__image--icon'
+                    .js-remove 削除
+                  -if @home.persisted?
+                    =image.check_box :_destroy, data:{ index: image.index }, class: 'hidden-destroy'
                 - if @home.persisted?
-                  - @home.images.each_with_index do |image, i|
-                    = image_tag image.url.url, data: { index: i }, width: "100", height: '100'
-              =f.fields_for :images do |image|
-                .js-file_group{"data-index" => "#{image.index}"}
-                  =image.file_field :url, class:'upload__image--icon'
-                  .js-remove 削除
-                -if @home.persisted?
-                  =image.check_box :_destroy, data:{ index: image.index }, class: 'hidden-destroy'
-              - if @home.persisted?
-                .js-file_group{"data-index" => "#{@home.images.count}"}
-                  = file_field_tag :url, name: "home[images_attributes][#{@home.images.count}][url]", class: 'js-file'
-                  .js-remove 削除
-        .add-item__main--bottom--name
-          .add-item__main--bottom--name__name
+                  .js-file_group{"data-index" => "#{@home.images.count}"}
+                    = file_field_tag :url, name: "home[images_attributes][#{@home.images.count}][url]", class: 'js-file'
+                    .js-remove 削除
+          .add-home__main--bottom--name
+            .add-home__main--bottom--name__name
 
-          .add-item__main--bottom--name__text
-            %h5.form-top
-              情報入力
-              .form-require
-                %span 必須
-            = f.text_area :text, class: 'textarea-default', placeholder: "皆さんのライフスタイルでの情報など共有してみよう！（マイホームだったら、デザイン性や機能性で気を付けたこと、後悔など）",:rows => "5"
-        .add-item__main--bottom--btn
-          %ul.add-item__main--bottom--btn__ul
-            %li.add-item__main--bottom--btn__ul__red
-            %li.add-item__main--bottom--btn__ul__ora
-            %li.add-item__main--bottom--btn__ul__gre
-            %li.add-item__main--bottom--btn__ul__blu
-          .add-item__main--bottom--btn__box
-            = f.submit '投稿する', class: 'add-item__main--bottom--btn__box__red-btn'
-            = link_to :back, class: "add-item__main--bottom--btn__box__gray-btn" do
-              もどる
-    .add-item__footer
-      .add-item__footer__list
-      = link_to root_path, class: "buy-items__footer__logo" do
-        -# = image_tag "logo_gray.svg", class: ".buy-items__footer__logo"
-      .add-item__footer__text
-        © 2020~ Takei_Kazaki, Inc.
+            .add-home__main--bottom--name__text
+              %h5.form-top
+                情報入力
+                .form-require
+                  %span 必須
+              = f.text_area :text, class: 'textarea-default', placeholder: "皆さんのライフスタイルでの情報など共有してみよう！（マイホームだったら、デザイン性や機能性で気を付けたこと、後悔など）",:rows => "5"
+          .add-home__main--bottom--btn
+            %ul.add-home__main--bottom--btn__ul
+              %li.add-home__main--bottom--btn__ul__red
+              %li.add-home__main--bottom--btn__ul__ora
+              %li.add-home__main--bottom--btn__ul__gre
+              %li.add-home__main--bottom--btn__ul__blu
+            .add-home__main--bottom--btn__box
+              = f.submit '投稿する', class: 'add-home__main--bottom--btn__box__red-btn'
+              = link_to :back, class: "add-home__main--bottom--btn__box__gray-btn" do
+                もどる
+      .add-home__footer
+        .add-home__footer__list
+        = link_to root_path, class: "buy-home__footer__logo" do
+          -# = image_tag "logo_gray.svg", class: ".buy-home__footer__logo"
+        .add-home__footer__text
+          © 2020~ Takei_Kazaki, Inc.

@@ -1,4 +1,5 @@
 class HomesController < ApplicationController
+  before_action :set_home, except: [:indexes, :new, :create, :search]
 
   def index
   end
@@ -22,7 +23,8 @@ class HomesController < ApplicationController
   end
 
   def show
-
+    @images = Image.find_by(params[:id])
+    @user_homes = Home.where(user_id: @home.user.id).where.not(id: params[:id]).limit(6)
   end
 
   def edit
@@ -39,4 +41,7 @@ class HomesController < ApplicationController
     params.require(:home).permit(:text, images_attributes: [:url,:_destroy,:id]).merge(user_id: current_user.id)
   end
 
+  def set_home
+    @home = Home.find(params[:id])
+  end
 end
