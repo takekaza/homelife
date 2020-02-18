@@ -1,16 +1,32 @@
 .side_bar
   .side_bar_box
-    %ul.line__newbtn
-      %li.line__newbtn__li
-        =link_to new_home_path, class: "line__newbtn__li__image" do
-          = icon('far', 'image', class: "line__newbtn__li__image--icon")
-    %ul.line__btn
-      %li.line__btn__li
-        =link_to "https://www.facebook.com/", class: "line__btn__li" do
-          = icon('fab', 'facebook-square', class: "line__btn__li--icon fa-rotate-90")
-      %li.line__btn__li
-        =link_to "https://twitter.com/", class: "line__btn__li" do
-          = icon('fab', 'twitter', class: "line__btn__li--icon fa-rotate-90")
-      %li.line__btn__li
-        =link_to "https://www.instagram.com/", class: "line__btn__li" do
-          = icon('fab', 'instagram', class: "line__btn__li--icon fa-rotate-90")
+    - if user_signed_in?
+      %ul.line__newbtn
+        %li.line__newbtn__li
+          =link_to new_home_path, class: "line__newbtn__li__image" do
+            = icon('far', 'image', class: "line__newbtn__li__image--icon")
+      %ul.line__btn
+        %li.line__btn__li
+          =link_to "https://www.facebook.com/", class: "line__btn__li" do
+            = icon('fab', 'facebook-square', class: "line__btn__li--icon fa-rotate-90")
+        %li.line__btn__li
+          =link_to "https://twitter.com/", class: "line__btn__li" do
+            = icon('fab', 'twitter', class: "line__btn__li--icon fa-rotate-90")
+        %li.line__btn__li
+          =link_to "https://www.instagram.com/", class: "line__btn__li" do
+            = icon('fab', 'instagram', class: "line__btn__li--icon fa-rotate-90")
+    - else
+      %ul.line__newbtn
+        %li.line__newbtn__li
+          =link_to new_user_session_path, class: "line__newbtn__li__image" do
+            = icon('far', 'image', class: "line__newbtn__li__image--icon")
+      %ul.line__btn
+        %li.line__btn__li
+          =link_to "https://www.facebook.com/", class: "line__btn__li" do
+            = icon('fab', 'facebook-square', class: "line__btn__li--icon fa-rotate-90")
+        %li.line__btn__li
+          =link_to "https://twitter.com/", class: "line__btn__li" do
+            = icon('fab', 'twitter', class: "line__btn__li--icon fa-rotate-90")
+        %li.line__btn__li
+          =link_to "https://www.instagram.com/", class: "line__btn__li" do
+            = icon('fab', 'instagram', class: "line__btn__li--icon fa-rotate-90")

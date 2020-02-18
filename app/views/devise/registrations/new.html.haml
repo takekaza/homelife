@@ -1,6 +1,7 @@
 .login
-  %h2 HomeLife
-  %h4 Create Account
+  = link_to root_path, class: "" do
+    %h2 HomeLife
+  %h4.formname Create User
   = render "devise/shared/links"
 
   .login-form
@@ -23,12 +24,12 @@
           = f.password_field :password, autocomplete: "off"
       .field
         .field-label
-          = f.label :password_confirmation
+          = f.label :password_confirmation, class: "fieldpoint"
         .field-input
           = f.password_field :password_confirmation, autocomplete: "off"
       .actions
-        = f.submit "Create Account", class: 'btn'
+        = f.submit "Create User", class: 'btn'
 
 
-  %a.forgot{:href => "#"} Already have an account?
+  %a.forgot{href: "#", class: "linkname"} Already have an user_account?
   %h6 (Passwordは英数字8文字以上)

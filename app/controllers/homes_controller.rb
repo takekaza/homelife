@@ -1,10 +1,10 @@
 class HomesController < ApplicationController
-  before_action :set_home, except: [:indexes, :new, :create, :search]
+  before_action :set_home, except: [:index, :indexes, :new, :create, :search]
 
   def index
 
   end
-  
+
   def indexes
     @home = Home.includes(:user)
     @images = Image.all
