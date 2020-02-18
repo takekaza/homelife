@@ -14,8 +14,28 @@
                   .show_middle--box--ul--lishow--link--content--a--top
                     %span.show_middle--box--ul--lishow--link--content--a--top--name
                       @ #{@home.user.name}
+                    =link_to edit_home_path, class: "line__newbtn__li__image" do
+                      = icon('fas', 'edit', class: "line__newbtn__li__image--icon")
+                    %button#modal-open-btn
+                      = icon('fas', 'trash-alt', class: "line__newbtn__li__image--icon")
+                    =link_to "", id: "item-delete-btn" do
+                      #text.destroy
+                    #overlay
+                      #modalmac
+                        .modal-message-box
+                          %div 確認
+                          %div 削除すると二度と復活できません。
+                          %div 本当に削除しますか？
+                        .modal-message-bottom
+                          %button#modal-colose-btn
+                            =link_to home_path(@home), id: 'modal-colose-btn' do
+                              キャンセル
+                          %button#delete-comformation-btn
+                            =link_to "/homes/#{@home.id}", method: :delete, id: 'item-delete-btn' do
+                              削除する
                     %span.show_middle--box--ul--lishow--link--content--a--top--like
                       いいね
+                      = icon('far', 'heart', class: "line__newbtn__li__image--icon")
                   .show_middle--box--ul--lishow--link--content--a--text
                     = @home.text
                 .show_middle--box--ul--lishow--link--content--photo

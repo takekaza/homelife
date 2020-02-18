@@ -1,5 +1,5 @@
 class HomesController < ApplicationController
-  before_action :set_home, except: [:index, :indexes, :new, :create, :search]
+  before_action :set_home, except: [:index, :indexes, :new, :create, :search, :destroy]
 
   def index
 
@@ -29,12 +29,25 @@ class HomesController < ApplicationController
     @user_homes = Home.where(user_id: @home.user.id).where.not(id: params[:id]).limit(6)
   end
 
-  def edit
+  def destroy
+    @home = Home.find(params[:id])
+    if @home.user_id == current_user.id && @home.destroy
+      redirect_to homes_indexes_path
+    else
+      render :index
+    end
+  end
 
+  def edit
+    @home = Home.find(params[:id])
   end
 
   def update
-
+    if @home.update(home_params)
+      redirect_to home_path
+    else
+      render :edit
+    end
   end
 
   private

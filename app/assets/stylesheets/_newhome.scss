@@ -1,11 +1,10 @@
 .bodynew{
-  // position: relative;
-  // min-height: 100%;
   background: #f0f0f0;
   font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
   font-size: 14px;
   color: #333;
   line-height: 1;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   @media screen and (max-width : 700px){
     width: auto;
     height: 1400px;
@@ -60,11 +59,27 @@
     &--top{
       padding: 32px 16px;
       font-size: 22px;
-      padding: 24px 8px;
+      padding: 24px 5px;
       font-size: 22px;
       line-height: 1.5;
       text-align: center;  
-      border-bottom: thin solid #f5f5f5;
+      border-bottom: 2px solid #f5f5f5;
+      .newpost{
+        margin-top: 10px;
+        font-size: 35px;
+        font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+        text-transform: uppercase;
+        color: #f0f0f0;
+        text-shadow: 0 8px 9px #c5c1bb, 0px -2px 1px #fff;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 20px;
+        text-decoration: none;
+        &:hover{
+          color: #fff;
+        }
+      }
+      
     }
     &--bottom{
       // 画像
@@ -86,6 +101,7 @@
           background: #f5f5f5;
           border: 1px dashed #ccc;
           text-align: center;
+          border-radius: 20px;
           &--icon{
             // font-size: 100px;
             // color: #aaa;
@@ -119,7 +135,7 @@
 
       // テキスト欄
       &--name{
-        padding: 40px;
+        padding: 30px;
         border-top: 1px solid #eee;
         @media screen and (max-width : 700px){
           padding: 10px;
@@ -141,6 +157,9 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          @media screen and (max-width : 700px){
+            padding: 0;
+          }
           &__red{
             margin: 0 10px 0;
             height: 60px;
@@ -273,6 +292,9 @@
     font-size: 12px;
     vertical-align: top;
     text-align: center;
+    @media screen and (max-width : 700px){
+      padding: 13px 4px;
+    }
   }
 }
 // 商品名フォーム
@@ -299,6 +321,9 @@
   background: #f5f5f5;
   font-size: 16px;
   line-height: 1.5;
+  @media screen and (max-width : 700px){
+    border: 1px dashed #ccc;
+  }
 }
 // 色が薄い文
 .sub-head{
