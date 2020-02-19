@@ -14,11 +14,11 @@
                   .show_middle--box--ul--lishow--link--content--a--top
                     %span.show_middle--box--ul--lishow--link--content--a--top--name
                       @ #{@home.user.name}
-                    =link_to edit_home_path, class: "line__newbtn__li__image" do
-                      = icon('fas', 'edit', class: "line__newbtn__li__image--icon")
-                    %button#modal-open-btn
-                      = icon('fas', 'trash-alt', class: "line__newbtn__li__image--icon")
-                    =link_to "", id: "item-delete-btn" do
+                    =link_to edit_home_path, class: "show_middle--box--ul--lishow--link--content--a--top--edit" do
+                      = icon('fas', 'edit', class: "show_middle--box--ul--lishow--link--content--a--top--edit--icon")
+                    #modal-open-btn.show_middle--box--ul--lishow--link--content--a--top--delete
+                      = icon('fas', 'trash-alt', class: "show_middle--box--ul--lishow--link--content--a--top--delete--icon")
+                    -# =link_to "", id: "item-delete-btn" do
                       #text.destroy
                     #overlay
                       #modalmac
@@ -34,8 +34,8 @@
                             =link_to "/homes/#{@home.id}", method: :delete, id: 'item-delete-btn' do
                               削除する
                     %span.show_middle--box--ul--lishow--link--content--a--top--like
-                      いいね
-                      = icon('far', 'heart', class: "line__newbtn__li__image--icon")
+                      good
+                      = icon('far', 'heart', class: "show_middle--box--ul--lishow--link--content--a--top--like--icon")
                   .show_middle--box--ul--lishow--link--content--a--text
                     = @home.text
                 .show_middle--box--ul--lishow--link--content--photo

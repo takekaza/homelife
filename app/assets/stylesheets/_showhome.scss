@@ -59,7 +59,7 @@
                 color: black;
                 cursor: pointer;
                 &--top{
-                  font-size: 12px;
+                  font-size: 19px;
                   height: 40px;
                   margin: 7px;
                   display: flex;
@@ -67,14 +67,21 @@
                   text-align: center;
                   align-items: center;
                   &--name{
-                    font-size: 12px;
+                    font-size: 19px;
                     height: 30px;
                     line-height: 30px;
                   }
+                  &--edit{
+                    color: black;
+                  }
+                  &--delete{
+                    color: rgb(100, 100, 100);
+                    cursor: pointer;
+                  }
                   #modal-open-btn{
-                    background-color: rgb(100, 100, 100);
-                    box-shadow: 0 2px 10px 0 #9E9E9E;
-                    color: white;
+                    // background-color: rgb(100, 100, 100);
+                    // box-shadow: 0 2px 10px 0 #9E9E9E;
+                    // color: white;
                   }
                   #item-delete-btn{
                       text-decoration: none;
@@ -115,9 +122,9 @@
                     .modal-message-bottom{
                       width: 100%;
                       display: flex;
-                      button {
+                      #modal-colose-btn{
                         width: 50%;
-                          height: 60px;
+                        height: 60px;
                         a{
                           text-decoration: none;
                           color: black;
@@ -129,9 +136,14 @@
                       }
                     
                       #delete-comformation-btn {
+                        width: 50%;
+                        height: 60px;
                         a{
+                          text-decoration: none;
+                          color: black;
                           width: 50%;
                           height: 60px;
+                          font-size: 16px;
                         }
                       }
                     }
@@ -145,14 +157,20 @@
                     border: 0;
                   }
                   &--like{
-                    font-size: 10px;
+                    font-size: 15px;
                     height: 30px;
                     line-height: 30px;
                     width: 60px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    &--icon{
+                      margin-left: 6px;
+                    }
                   }
                 }
                 &--text{
-                  font-size: 12px;
+                  font-size: 16px;
                   height: 70px;
                   margin: 0 6px;
                   padding: 7px;
