@@ -1,0 +1,11 @@
+.like_button{
+  .like{
+    text-decoration: none;
+  &:before{
+    color: black;
+  }
+  &:after{
+    color: red;
+  }
+  }
+}

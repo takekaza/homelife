@@ -1,0 +1,7 @@
+.like_button
+  - if current_user.likes.find_by(home_id: @home.id)
+    = link_to "♡", likes_delete_path(home_id: @home.id), {method: "post", remote: true}
+    = @like_count
+  - else
+    = link_to "♡", likes_create_path(home_id: @home.id), {method: "post", remote: true}
+    = @like_count

@@ -33,9 +33,12 @@
                           %button#delete-comformation-btn
                             =link_to "/homes/#{@home.id}", method: :delete, id: 'item-delete-btn' do
                               削除する
-                    %span.show_middle--box--ul--lishow--link--content--a--top--like
-                      good
-                      = icon('far', 'heart', class: "show_middle--box--ul--lishow--link--content--a--top--like--icon")
+                    -# %span.show_middle--box--ul--lishow--link--content--a--top--like
+                    -#   good
+                    -#   = icon('far', 'heart', class: "show_middle--box--ul--lishow--link--content--a--top--like--icon")
+
+                    %div{class: "buttons_#{@home.id}"}= render partial: 'likes/like'
+                    
                   .show_middle--box--ul--lishow--link--content--a--text
                     = @home.text
                 .show_middle--box--ul--lishow--link--content--photo
