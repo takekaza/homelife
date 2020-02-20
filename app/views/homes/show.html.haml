@@ -40,10 +40,10 @@
                     %div{class: "buttons_#{@home.id}"}= render partial: 'likes/like'
                     
                   .show_middle--box--ul--lishow--link--content--a--text
-                    = @home.text
+                    %p= @home.text
                 .show_middle--box--ul--lishow--link--content--photo
-                  - @home.images.first(5).each do |image|
-                    .show_middle--box--ul--lishow--link--content--photo--box
+                  .show_middle--box--ul--lishow--link--content--photo--box
+                    - @home.images.first(5).each do |image|
                       = image_tag "#{image.url}", class: "show_middle--box--ul--lishow--link--content--photo--box--subimg", alt:"logo"
 
                   .show_middle--box--ul--lishow--link--content--photo--top

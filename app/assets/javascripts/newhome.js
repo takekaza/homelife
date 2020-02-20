@@ -1,23 +1,34 @@
 $(function(){
 
   const buildFileField = (index)=>{
-    const html =`<div data-index="${index}" class="js-file_group">
-                    <input class="upload__image--icon"type="file"
-                    name="item[images_attributes][${index}][url]"
-                    id="item_images_attributes_${index}_url"><br>
-                    <div class="js-remove">削除</div>
-                  </div>`;
+    const html =`
+                  <div data-index="${index}" class="js-file_group" style="
+                  position: relative; top: 2px;">
+                    <label type="file" class="upload__image--icon" for="home_images_attributes_${index}_url"
+                     name="home[images_attributes][${index}][url]" style="cursor: pointer; width: 20px;
+                      height: 20px; font-size: 18px;">
+                      <i class="fas fa-image upload__image--icon--i"></i>
+                      <input type="file"
+                      name="home[images_attributes][${index}][url]"
+                      id="home_images_attributes_${index}_url" >
+                    </label>
+                    
+                    <div class="js-remove"style="width: 50px;font-size: 14px;bottom: 2px;
+                    left: 1px;
+                    position: relative; cursor: pointer;">削除</div>
+                  </div>
+                `;
     return html;
 
   }
   const buildImg = (index,url)=>{
-    const html =`<img data-index="${index}" src="${url}" width="100px" height=""100px>`;
+    const html =`<img data-index="${index}" src="${url}" width="100px" height="64px">`;
     return html;
   }
   let fileIndex =[1,2,3,4,5,6,7,8,9,10];
   lastIndex = $('.js-file_group:last').data('index');
   fileIndex.splice(0, lastIndex);
-  $('.hidden-destroy').hide();  lastIndex
+  $('.hidden-destroy').hide(); lastIndex
 
 // 値が変わると変数htmlが追加されindexの値が１増える
 
@@ -36,14 +47,14 @@ $(function(){
     }
   });
   
-  $('.upload__image').on('click','.js-remove',function(){
+  $('.js-file_group').on('click','.js-remove',function(){
     
     const targetIndex = $(this).parent().data('index')
     const hiddenCheck = $(`input[data-index="${targetIndex}"].hidden-destroy`);
 
     if (hiddenCheck) hiddenCheck.prop('checked', true);
     $(this).parent().remove();
-    if ($('.upload__image--icon').length == 0)　$ ('.upload__image').append(buildFileField(fileIndex[0]));
+    if ($('.upload__image--icon').length == 0) $ ('.upload__image').append(buildFileField(fileIndex[0]));
     $(`img[data-index="${targetIndex}"]`).remove();
   });
 });

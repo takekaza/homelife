@@ -16,18 +16,18 @@
   .show_middle{
     min-height: 100vh;
     &--box{
-      margin: 80px auto;
+      margin: 99px auto 20px;
       min-height: 700px;
       max-width: 1000px;
       &--ul{
-        padding-top: 80px;
+        padding-top: 40px;
         min-height: 700px;
         max-width: 1000px;
         width: 100%;
         &--lishow{
           margin: 30px 0 0 140px;
           width: 70%;
-          height: 680px;
+          height: 780px;
           display: inline-block;
           background-color: white;
           border-radius: 6%;
@@ -171,10 +171,15 @@
                 }
                 &--text{
                   font-size: 16px;
-                  height: 70px;
+                  height: 160px;
                   margin: 0 6px;
                   padding: 7px;
                   border-top: 2px solid #f5f5f5;
+                  overflow: scroll;
+                  word-break: break-all;
+                  p{
+                    margin-bottom: 5px;
+                  }
                 }
               }
               &--photo{

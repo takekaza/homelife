@@ -20,13 +20,13 @@
                     = icon('far', 'heart', class: "line__newbtn__li__image--icon")
                 = link_to home_path(home), class: "immain_middle--box--ul--li--link--content--a" do
                   .immain_middle--box--ul--li--link--content--a--text
-                    = home.text
+                    %p= home.text
+                    %span.text-btn
                 .immain_middle--box--ul--li--link--content--photo
-                  - home.images.first(5).each do |image|
-                    .immain_middle--box--ul--li--link--content--photo--box
-                      = image_tag "#{image.url}", class: "immain_middle--box--ul--li--link--content--photo--box--subimg", alt:"logo"
+                  .immain_middle--box--ul--li--link--content--photo--box
+                    - home.images.first(5).each do |image|
+                      = image_tag "#{image.url}", class: "immain_middle--box--ul--li--link--content--photo--box--subimg", alt:"logo", id: "#{image.home.id}"
 
                   .immain_middle--box--ul--li--link--content--photo--top
                     - home.images.first(1).each do |image|
-                      = image_tag "#{image.url}", class: "immain_middle--box--ul--li--link--content--photo--top--mainimg", alt:"logo"
-
+                      = image_tag "#{image.url}", class: "immain_middle--box--ul--li--link--content--photo--top--mainimg", alt:"logo", id: "#{image.home.id}"
