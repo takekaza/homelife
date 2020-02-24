@@ -1,5 +1,5 @@
 $(function() {
-  $("img.show_middle--box--ul--lishow--link--content--photo--box--subimg").mouseover(function(){
+  $("img.show_middle--box--ul--lishow--link--content--photo--box--subimg").click(function(){
   var selectedSrc = $(this).attr('src').replace(/^(.+)(\.gif|\.jpg|\.png+)$/, "$1"+"$2");
 
   // 画像入れ替え
