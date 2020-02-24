@@ -1,7 +1,7 @@
 $(function(){
   $(".textarea-de").on('keydown keyup keypress change blur',function(){
     var valueLength = $(this).val().length;
-    var limitNum = 100 - valueLength
+    var limitNum = 1000 - valueLength
     if ( limitNum >= 1 ) {
       $("#num").html(limitNum);
       $("#text-count").removeClass('over');
