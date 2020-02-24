@@ -16,8 +16,8 @@
                   %span.immain_middle--box--ul--li--link--content--top--name
                     @ #{home.user.name}
                   %span.immain_middle--box--ul--li--link--content--top--like
-                    いいね
-                    = icon('far', 'heart', class: "line__newbtn__li__image--icon")
+                    = icon('fas', 'heart', class: "immain_middle--box--ul--li--link--content--top--like--icon")
+                    = home.liked_users.count
                 = link_to home_path(home), class: "immain_middle--box--ul--li--link--content--a" do
                   .immain_middle--box--ul--li--link--content--a--text
                     %p= home.text
