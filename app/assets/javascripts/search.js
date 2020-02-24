@@ -1,26 +1,28 @@
-var instas = ['ryota_para','sabon.ismart','watashino_setsuyaku','relivers_yourmystar','kamechan_ismart','eringo__']
-$(function(){
-  let list = $("#list");
+// var instas = ['ryota_para','sabon.ismart','watashino_setsuyaku','relivers_yourmystar','kamechan_ismart','eringo__']
+// $(function(){
+//   let list = $("#list");
 
-  function appendList(word){
-    let item = $('<li class="list">').append(word);
-    list.append(item)
-  }
+//   function appendList(word){
+//     let item = $('<li class="list">').append(word);
+//     list.append(item)
+//   }
 
-  $("#submit").on("click", function(){
-    let input = $("#keyword").val();
-    let reg = new RegExp("^" + input);
+//   $("#submit").on("click", function(){
+//     let input = $("#keyword").val();
+//     let reg = new RegExp("^" + input);
 
-    $(".list").remove();
+//     $(".list").remove();
 
-    $.each(instas, function(i,insta){
-      if (insta.match(reg)){
-        appendList(insta);
-      }
-    });
+//     $.each(instas, function(i,insta){
+//       if (insta.match(reg)){
+//         appendList(insta);
+//       }
+//     });
     
-    if ($(".list").length === 0){
-      appendList("一致する方はいません。");
-    }
-  });
-});
+//     if ($(".list").length === 0){
+//       appendList("一致する方はいません。");
+//     }
+//   });
+// });
+
+// 検索機能を実装する予定

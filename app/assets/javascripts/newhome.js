@@ -30,7 +30,6 @@ $(function(){
   fileIndex.splice(0, lastIndex);
   $('.hidden-destroy').hide(); lastIndex
 
-// 値が変わると変数htmlが追加されindexの値が１増える
 
   $('.upload__image').on('change','.upload__image--icon', function(e){
     const targetIndex =$(this).parent().data('index');

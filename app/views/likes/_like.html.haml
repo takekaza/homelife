@@ -2,10 +2,8 @@
   - if current_user.likes.find_by(home_id: @home.id)
     = link_to likes_delete_path(home_id: @home.id), {method: "delete", remote: true}, class: "like_button__delete" do
       = icon('fas', 'heart', class: "like_button__delete--icon")
-    -# = @like_count
     = @home.likes.count
   - else
     = link_to likes_create_path(home_id: @home.id), {method: "post", remote: true}, class: "like_button__create" do
       = icon('far', 'heart', class: "like_button__create--icon")
-    -# = @like_count
     = @home.likes.count

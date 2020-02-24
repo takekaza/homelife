@@ -6,9 +6,9 @@
         = icon('fas', 'search', class: 'searchbtn--icon')
     -# %ul#list
   .header-right
-    
-    .titleac
-      Accounts
+    = link_to accounts_path, class: "titleac" do
+      .titleac
+        Accounts
     .username
       @#{current_user.name}
     .dropdown

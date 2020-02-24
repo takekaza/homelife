@@ -6,9 +6,9 @@
         = icon('fas', 'search', class: 'searchbtn--icon')
     -# %ul#list
   .header-right
-    
-    .titleim
-      Images
+    = link_to homes_indexes_path, class: "titleim" do
+      .titleim
+        Images
     .username
       @#{current_user.name}
     .dropdown
@@ -51,5 +51,3 @@
         %li.navbar__menu--box
           =link_to root_path, class: "navbar__menu--box--top" do
             Top
-        
-      -# .hero

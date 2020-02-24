@@ -7,9 +7,9 @@
     -# %ul#list
   - if user_signed_in?
     .header-right
-      
-      .titleab
-        About
+      = link_to abouts_path, class: "titleab" do
+        .titleab
+          About
       .username
         @#{current_user.name}
       .dropdown
@@ -71,8 +71,6 @@
             Log out
           =link_to new_user_session_path, class: "dropdown-item" do
             Log in
-          =link_to edit_user_registration_path(current_user), class: "dropdown-item" do
-            Edit user
           =link_to new_user_registration_path, class: "dropdown-item" do
             Create user
     %a.menu

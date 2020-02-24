@@ -1,6 +1,5 @@
 $(function() {
   $("img.show_middle--box--ul--lishow--link--content--photo--box--subimg").mouseover(function(){
-  // "_thumb"を削った画像ファイル名を取得
   var selectedSrc = $(this).attr('src').replace(/^(.+)(\.gif|\.jpg|\.png+)$/, "$1"+"$2");
 
   // 画像入れ替え
