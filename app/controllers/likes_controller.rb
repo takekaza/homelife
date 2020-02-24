@@ -1,4 +1,6 @@
 class LikesController < ApplicationController
+  before_action :set_variables
+
   def create
     @like = Like.new(user_id: current_user.id, home_id: params[:home_id])
     @like.save
@@ -12,4 +14,10 @@ class LikesController < ApplicationController
     @like.destroy
     @like_count = Like.where(home_id: params[:home_id]).count
   end
+
+
+  def set_variables
+    @home = Home.find(params[:home_id])
+  end
+
 end

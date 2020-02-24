@@ -1,11 +1,16 @@
 .like_button{
   text-decoration: none;
+  color: black;
   &__delete{
-    text-decoration: none;
-    color: black;
+    &--icon{
+      text-decoration: none;
+      color: black;
+    }
   }
   &__create{
-    text-decoration: none;
-    color: red;
+    &--icon{
+      text-decoration: none;
+      color: red;
+    }
   }
 }

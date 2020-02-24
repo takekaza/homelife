@@ -5,7 +5,7 @@ $(function(){
                   <div data-index="${index}" class="js-file_group" style="
                   position: relative; top: 2px;">
                     <label type="file" class="upload__image--icon" for="home_images_attributes_${index}_url"
-                     name="home[images_attributes][${index}][url]" style="cursor: pointer; width: 20px;
+                      style="cursor: pointer; width: 20px;
                       height: 20px; font-size: 18px;">
                       <i class="fas fa-image upload__image--icon--i"></i>
                       <input type="file"
@@ -47,7 +47,7 @@ $(function(){
     }
   });
   
-  $('.js-file_group').on('click','.js-remove',function(){
+  $('.upload__image').on('click','.js-remove',function(){
     
     const targetIndex = $(this).parent().data('index')
     const hiddenCheck = $(`input[data-index="${targetIndex}"].hidden-destroy`);

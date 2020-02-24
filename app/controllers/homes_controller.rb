@@ -27,6 +27,7 @@ class HomesController < ApplicationController
   def show
     @images = Image.find_by(params[:id])
     @user_homes = Home.where(user_id: @home.user.id).where.not(id: params[:id]).limit(6)
+    # @likes_count = Like.where(post_id: @post.id).count
   end
 
   def destroy
