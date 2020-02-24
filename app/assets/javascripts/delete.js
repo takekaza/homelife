@@ -1,4 +1,5 @@
-document.addEventListener(
+
+  document.addEventListener(
     "DOMContentLoaded", e => {
       let modal_open = document.getElementById("modal-open-btn");
       modal_open.onclick = function (e) {
