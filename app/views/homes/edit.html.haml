@@ -2,12 +2,8 @@
   = form_for [@home] do |f|
     .bodynew
       .add-home__header
-        = link_to root_path, class: "buy-home__header--logo" do
-          -# = image_tag "fmarket_logo_red.svg", class: "buy-homes__header--logo", alt:"logo"
       .add-home__main
-      
         .add-home__main--top
-        
           =link_to root_path, class: "newpost" do
             Home Life
         
@@ -52,8 +48,8 @@
               = f.text_area :text, class: 'textarea-de', placeholder: "皆さんのライフスタイルでの情報など共有してみよう！（マイホームだったら、デザイン性や機能性で気を付けたこと、後悔など）", :rows => "5", :maxlength => "100"
               %span#text-count
                 あと
-                %span#num 100
-                文字
+                %span#num 1000
+                ／1000
           .add-home__main--bottom--btn
             %ul.add-home__main--bottom--btn__ul
               %li.add-home__main--bottom--btn__ul__red
@@ -66,7 +62,5 @@
                 もどる
       .add-home__footer
         .add-home__footer__list
-        = link_to root_path, class: "buy-home__footer__logo" do
-          -# = image_tag "logo_gray.svg", class: ".buy-home__footer__logo"
         .add-home__footer__text
           © 2020~ Takei_Kazaki, Inc.

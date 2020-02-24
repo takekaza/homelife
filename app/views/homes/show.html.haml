@@ -3,7 +3,6 @@
   = render "images/header"
   .show_home
     .show_center
-      
     .show_middle
       .show_middle--box
         %ul.show_middle--box--ul
@@ -18,7 +17,6 @@
                       = icon('fas', 'edit', class: "show_middle--box--ul--lishow--link--content--a--top--edit--icon")
                     #modal-open-btn.show_middle--box--ul--lishow--link--content--a--top--delete
                       = icon('fas', 'trash-alt', class: "show_middle--box--ul--lishow--link--content--a--top--delete--icon")
-                    -# =link_to "", id: "item-delete-btn" do
                       #text.destroy
                     #overlay
                       #modalmac
@@ -33,12 +31,8 @@
                           %button#delete-comformation-btn
                             =link_to "/homes/#{@home.id}", method: :delete, id: 'item-delete-btn' do
                               削除する
-                    -# %span.show_middle--box--ul--lishow--link--content--a--top--like
-                    -#   good
-                    -#   = icon('far', 'heart', class: "show_middle--box--ul--lishow--link--content--a--top--like--icon")
-
                     %div{class: "buttons_#{@home.id}"}= render partial: 'likes/like'
-                    
+
                   .show_middle--box--ul--lishow--link--content--a--text
                     %p= @home.text
                 .show_middle--box--ul--lishow--link--content--photo
