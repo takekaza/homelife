@@ -283,7 +283,8 @@
                   padding: 5px 28px;
                   height: 280px;
                   @media screen and (max-width : 500px){
-                    height: 220px;
+                    height: 255px;
+                    padding: 5px 22px;
                   }
                   &--mainimg{
                     width: 100%;
