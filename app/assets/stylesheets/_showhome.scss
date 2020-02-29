@@ -44,7 +44,7 @@
           @media screen and (max-width : 700px){
             margin: 30px 0 0 40px;
             width: 85%;
-            height: 500px;
+            height: 540px;
           }
           &--link{
             text-decoration: none;
@@ -201,7 +201,8 @@
                   padding: 25px 55px 5px 55px;
                   height: 510px;
                   @media screen and (max-width : 700px){
-                    height: 220px;
+                    height: 280px;
+                    padding: 25px 40px 5px 40px;
                   }
                   &--mainimg{
                     width: 100%;
