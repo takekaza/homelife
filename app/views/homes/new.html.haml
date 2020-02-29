@@ -15,13 +15,13 @@
                 .form-require
                   %span 必須
               .upload__text--text
-                最大6枚までアップロードできます
+                最大4枚までアップロードできます
 
               .upload__image
                 .previews
                   - if @home.persisted?
                     - @home.images.each_with_index do |image, i|
-                      = image_tag image.url.url, data: { index: i }, width: "100", height: '64'
+                      = image_tag image.url.url, data: { index: i }, width: "50", height: '64'
                 =f.fields_for :images do |image|
                   .js-file_group{"data-index" => "#{image.index}"}
                     = image.label :url, class: "upload__image--icon", type: "file" do
