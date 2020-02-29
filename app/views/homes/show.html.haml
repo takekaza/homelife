@@ -9,6 +9,7 @@
           %li.show_middle--box--ul--lishow
             .show_middle--box--ul--lishow--link
               .show_middle--box--ul--lishow--link--content
+              -if current_user == @home.user
                 = link_to "#", class: "show_middle--box--ul--lishow--link--content--a" do
                   .show_middle--box--ul--lishow--link--content--a--top
                     %span.show_middle--box--ul--lishow--link--content--a--top--name
@@ -32,9 +33,43 @@
                             =link_to "/homes/#{@home.id}", method: :delete, id: 'item-delete-btn' do
                               削除する
                     %div{class: "buttons_#{@home.id}"}= render partial: 'likes/like'
-
                   .show_middle--box--ul--lishow--link--content--a--text
-                    %p= @home.text
+                    %p= safe_join(@home.text.split("\n"), tag(:br))
+                .show_middle--box--ul--lishow--link--content--photo
+                  .show_middle--box--ul--lishow--link--content--photo--box
+                    - @home.images.first(5).each do |image|
+                      = image_tag "#{image.url}", class: "show_middle--box--ul--lishow--link--content--photo--box--subimg", alt:"logo"
+
+                  .show_middle--box--ul--lishow--link--content--photo--top
+                    - @home.images.first(1).each do |image|
+                      = image_tag "#{image.url}", class: "show_middle--box--ul--lishow--link--content--photo--top--mainimg", alt:"logo"
+
+              -else
+                = link_to "#", class: "show_middle--box--ul--lishow--link--content--a" do
+                  .show_middle--box--ul--lishow--link--content--a--top
+                    %span.show_middle--box--ul--lishow--link--content--a--top--name
+                      @ #{@home.user.name}
+                    -# =link_to edit_home_path, class: "show_middle--box--ul--lishow--link--content--a--top--edit" do
+                    -#   = icon('fas', 'edit', class: "show_middle--box--ul--lishow--link--content--a--top--edit--icon")
+                    -# #modal-open-btn.show_middle--box--ul--lishow--link--content--a--top--delete
+                    -#   = icon('fas', 'trash-alt', class: "show_middle--box--ul--lishow--link--content--a--top--delete--icon")
+                    -#   #text.destroy
+                    -# #overlay
+                    -#   #modalmac
+                    -#     .modal-message-box
+                    -#       %div 確認です！
+                    -#       %div 削除すると戻すことができません！
+                    -#       %div 本当に削除しますか？
+                    -#     .modal-message-bottom
+                    -#       %button#modal-colose-btn
+                    -#         =link_to home_path(@home), id: 'modal-colose-btn' do
+                    -#           キャンセル
+                    -#       %button#delete-comformation-btn
+                    -#         =link_to "/homes/#{@home.id}", method: :delete, id: 'item-delete-btn' do
+                    -#           削除する
+                    %div{class: "buttons_#{@home.id}"}= render partial: 'likes/like'
+                  .show_middle--box--ul--lishow--link--content--a--text
+                    %p= safe_join(@home.text.split("\n"), tag(:br))
                 .show_middle--box--ul--lishow--link--content--photo
                   .show_middle--box--ul--lishow--link--content--photo--box
                     - @home.images.first(5).each do |image|

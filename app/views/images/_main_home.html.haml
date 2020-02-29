@@ -20,7 +20,7 @@
                     = home.liked_users.count
                 = link_to home_path(home), class: "immain_middle--box--ul--li--link--content--a" do
                   .immain_middle--box--ul--li--link--content--a--text
-                    %p= home.text
+                    %p= safe_join(home.text.split("\n"), tag(:br))
                     %span.text-btn
                 .immain_middle--box--ul--li--link--content--photo
                   .immain_middle--box--ul--li--link--content--photo--box
