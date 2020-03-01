@@ -1,24 +1,40 @@
-# README
+[![HomeLife](https://i.gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3.gif)](https://gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+"HomeLife" is an application that allows you to post and share your lifestyle.
+====
 
-Things you may want to cover:
+Overview
+## Description
 
-* Ruby version
 
-* System dependencies
+## Demo
 
-* Configuration
+You
 
-* Database creation
+## Requirement
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Usage
 
-* Deployment instructions
 
-* ...
+
+## Install
+
+
+
+## Note
+
+
+
+## Author
+
+
+
+## Licence
+
+[MIT]()
+
+## Author
+
+[takekaza](https://github.com/takekaza)
