@@ -1,4 +1,4 @@
-[![HomeLife](https://i.gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3.gif)](https://gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3)
+[![HomeLife](https://i.gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3.gif"HomeLife")](https://gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3)
 
 "HomeLife" is an application that allows you to post and share your lifestyle.
 ====
