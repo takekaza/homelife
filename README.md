@@ -4,11 +4,10 @@
 
 ### "HomeLife" is an application that allows you to post and share your lifestyle.
 
-# :no_bell: App URL
+# :iphone: App URL
 
 ### **http://18.182.81.149/**
-### test account 
-###  email : test@com / pass : homelife
+test account → email : test@com / pass : homelife
 
 
 ## Description
