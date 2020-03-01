@@ -1,4 +1,4 @@
-[![HomeLife](https://i.gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3.gif)](https://gyazo.com/ce34970d97fe2b2b3e6e985d6a2c78f3"HomeLife")
+[![HomeLife](https://i.gyazo.com/bc99fe64b6c1e0d64ed85e6e585c3e61.gif)](https://gyazo.com/bc99fe64b6c1e0d64ed85e6e585c3e61"HomeLife")
 
 # :house_with_garden: HomeLife
 
@@ -7,7 +7,7 @@
 # :iphone: App URL
 
 ### **http://18.182.81.149/**
-<div style="font-size: 20px;">test account → email : test@com / pass : homelife</div>
+### test account → email : test@com / pass : homelife
 
 
 ## Description
@@ -35,12 +35,8 @@ You
 
 ## Author
 
-
+[takekaza](https://github.com/takekaza)
 
 ## Licence
 
 [MIT]()
-
-## Author
-
-[takekaza](https://github.com/takekaza)
