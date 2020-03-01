@@ -17,7 +17,7 @@
 
 <h3 align="center">〜 投稿一覧 〜<h3>
 
-<img src="https://i.gyazo.com/ef7f441b345b77cac1722060d8abbd3e.gif">
+<a href="https://gyazo.com/ef7f441b345b77cac1722060d8abbd3e"><img src="https://i.gyazo.com/ef7f441b345b77cac1722060d8abbd3e.gif" alt="Image from Gyazo" width="962"/></a>
 
 # Requirement
 
