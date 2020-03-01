@@ -7,7 +7,7 @@
 # :iphone: App URL
 
 ### **http://18.182.81.149/**
-<h6>test account → email : test@com / pass : homelife</h6>
+<div style="font-size: 20px;">test account → email : test@com / pass : homelife</div>
 
 
 ## Description
