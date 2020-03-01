@@ -10,33 +10,51 @@
 ### test account → email : test@com / pass : homelife
 ### Please try to login.
 
-## Description
+# Demo
 
 
-## Demo
+# Features
+
+<h3 align="center">- 投稿一覧 -<h3>
+
+[![Image from Gyazo](https://i.gyazo.com/ef7f441b345b77cac1722060d8abbd3e.gif)](https://gyazo.com/ef7f441b345b77cac1722060d8abbd3e)
+
+# Requirement
+
+* ruby 2.5.1
+* rails 5.2.4.1
+* jbuilder 2.5
+* mysql2 0.6.0
+* carrierwave 2.0.2
+* mini_magick
+* devise
+* capistrano 3.11.2
+* unicorn 5.4.1
+* fog-aws
+* rspec-rails 3.9.0
+* font-awesome-sass
+* haml-rails
+* sass-rails
+* jquery-rails
+* jquery-ui-rails
+* bootstrap 4.3.1
+
+# Usage
 
 
 
-## Requirement
+# Install
 
 
 
-## Usage
+# Note
 
 
 
-## Install
-
-
-
-## Note
-
-
-
-## Author
+# Author
 
 [takekaza](https://github.com/takekaza)
 
-## Licence
+# Licence
 
 [MIT]()
