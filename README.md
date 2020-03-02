@@ -25,7 +25,7 @@
 
 <p align="center">
 
-[![Image from Gyazo](https://i.gyazo.com/ee5426746c50f66ccfb85249e2ce83ae.gif)](https://gyazo.com/ee5426746c50f66ccfb85249e2ce83ae)
+[![Image from Gyazo](https://i.gyazo.com/2eef500c2366e4fcd81a91a824544ec6.gif)](https://gyazo.com/2eef500c2366e4fcd81a91a824544ec6)
 
 </p>
 
