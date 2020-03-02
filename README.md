@@ -3,7 +3,8 @@
 # :house_with_garden: HomeLife
 
 ### "HomeLife" is an application that allows you to post and share your lifestyle.
-### "マイホーム購入に後悔する人が多いな"→"実際に後悔した点をこれから購入を考えている人向けに共有できたらいいな" から始まったサービスです。その他ライフスタイルに関わるものを良かったら投稿・共有してみてください:sparkles:
+### "マイホーム購入に後悔する人が多いな"→"実際に後悔した点をこれから購入を考えている人向けに共有できたらいいな" から始まり、気軽に投稿や共有できるサービスです。
+### その他ライフスタイルに関わるものでも、記載されてるInstagramerの情報を引用してでも、良かったら投稿・共有してみてください:sparkles:
 
 # :iphone: App URL
 
