@@ -10,9 +10,6 @@
 ### test account → email : test@com / pass : homelife
 ### Please try to login.
 
-# Demo
-
-
 # :key: Features
 
 <h3 align="center">〜 インスタグラマー 〜</h3>
@@ -55,7 +52,7 @@
 
 <p align="center">
 
-[![Image from Gyazo](https://i.gyazo.com/f33d6cccff696ad834aab92d00846e6b.gif)](https://gyazo.com/f33d6cccff696ad834aab92d00846e6b)
+[![Image from Gyazo](https://i.gyazo.com/cf4c1151add57b0e7257b46e02b6d75f.gif)](https://gyazo.com/cf4c1151add57b0e7257b46e02b6d75f)
 
 </p>
 
