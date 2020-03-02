@@ -15,7 +15,7 @@
 
 # :key: Features
 
-<h3 align="center">〜 Instagramer 一覧 〜</h3>
+<h3 align="center">〜 インスタグラマー 〜</h3>
 
 <p align="center">
 
