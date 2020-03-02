@@ -5,7 +5,7 @@
 ### "HomeLife" is an application that allows you to post and share your lifestyle.
 ### "マイホーム購入に後悔する人が多いな"→"実際に後悔した点をこれから購入を考えている人向けに共有できたらいいな" から始まり、気軽に投稿や共有できるサービスです。
 ### その他ライフスタイルに関わるものでも、記載されてるInstagramerの情報を引用してでも、良かったら投稿・共有してみてください:sparkles:
-
+### 《機能》 新規登録/ログイン/ログアウト/複数写真文章の投稿/投稿者のみ編集や削除可能/いいね機能/ドロップメニューのみBootstrap使用
 # :iphone: App URL
 
 ### **http://18.182.81.149/**
@@ -14,7 +14,7 @@
 
 # :key: Features
 
-<h3 align="center">〜 インスタグラマー 〜</h3>
+<h3 align="center">〜 Influencer List 〜</h3>
 
 <p align="center">
 
@@ -23,7 +23,7 @@
 </p>
 
 
-<h3 align="center">〜 投稿画面 〜</h3>
+<h3 align="center">〜 Post View 〜</h3>
 
 <p align="center">
 
@@ -32,7 +32,7 @@
 </p>
 
 
-<h3 align="center">〜 投稿一覧 〜</h3>
+<h3 align="center">〜 Posts List 〜</h3>
 
 <p align="center">
 
@@ -41,7 +41,7 @@
 </p>
 
 
-<h3 align="center">〜 投稿詳細 〜</h3>
+<h3 align="center">〜 Post Details 〜</h3>
 
 <p align="center">
 
@@ -50,7 +50,7 @@
 </p>
 
 
-<h3 align="center">〜 Responsive design 〜</h3>
+<h3 align="center">〜 Responsive Design 〜</h3>
 
 <p align="center">
 
