@@ -19,7 +19,7 @@
 
 <p align="center">
 
-[![Image from Gyazo](https://i.gyazo.com/8e83dc6efc843c5247276045e1005b87.gif)](https://gyazo.com/8e83dc6efc843c5247276045e1005b87)
+[![Image from Gyazo](https://i.gyazo.com/b95ca2cda4e8cc3e3ecf9a6c32a37b63.gif)](https://gyazo.com/b95ca2cda4e8cc3e3ecf9a6c32a37b63)
 
 </p>
 
