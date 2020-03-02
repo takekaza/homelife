@@ -17,7 +17,8 @@
 
 <h3 align="center">〜 投稿一覧 〜<h3>
 
-![HomeLife](https://raw.github.com/wiki/takekaza/homelife/images/投稿一覧.gif)
+<!-- ![HomeLife](https://raw.github.com/wiki/takekaza/homelife/images/投稿一覧.gif) -->
+[![Image from Gyazo](https://i.gyazo.com/8929296d8e1646c89dc6dfc95ea758c7.jpg)](https://gyazo.com/8929296d8e1646c89dc6dfc95ea758c7)
 
 # Requirement
 
