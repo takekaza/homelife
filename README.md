@@ -15,7 +15,7 @@
 
 # :key: Features
 
-<h3 align="center">〜 投稿一覧 〜</h3>
+<h3 align="center">〜 投稿一覧 〜<h3>
 
 <p align="center">
 
@@ -24,7 +24,7 @@
 </p>
 
 
-<h3 align="center">〜 投稿詳細 〜</h3>
+<h3 align="center">〜 投稿詳細 〜<h3>
 
 <p align="center">
 
@@ -33,7 +33,7 @@
 </p>
 
 
-<h3 align="center">〜 Instagramer 一覧 〜</h3>
+<h3 align="center">〜 Instagramer 一覧 〜<h3>
 
 <p align="center">
 
