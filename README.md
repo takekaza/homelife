@@ -51,6 +51,14 @@
 </p>
 
 
+<h3 align="center">〜 Responsive design 〜</h3>
+
+<p align="center">
+
+[![Image from Gyazo](https://i.gyazo.com/60397682c49f22f7922e3d776671ebc7.gif)](https://gyazo.com/60397682c49f22f7922e3d776671ebc7)
+
+</p>
+
 # Requirement
 
 * ruby 2.5.1
