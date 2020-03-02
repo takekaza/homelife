@@ -20,6 +20,10 @@
 <!-- ![HomeLife](https://raw.github.com/wiki/takekaza/homelife/images/投稿一覧.gif) -->
 [![Image from Gyazo](https://i.gyazo.com/8929296d8e1646c89dc6dfc95ea758c7.jpg)](https://gyazo.com/8929296d8e1646c89dc6dfc95ea758c7)
 
+<h3 align="center">〜 投稿詳細 〜<h3>
+
+[![Image from Gyazo](https://i.gyazo.com/02b03a564bf7926363df3502548227f8.jpg)](https://gyazo.com/02b03a564bf7926363df3502548227f8)
+
 # Requirement
 
 * ruby 2.5.1
