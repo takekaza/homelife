@@ -34,11 +34,9 @@
 
 
 <h3 align="center">〜 Instagramer 一覧 〜</h3>
-
 <p align="center">
 
 [![Image from Gyazo](https://i.gyazo.com/94638900cc7eeab85d51e4d177267024.gif)](https://gyazo.com/94638900cc7eeab85d51e4d177267024)
-
 </p>
 
 # Requirement
