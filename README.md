@@ -55,7 +55,7 @@
 
 <p align="center">
 
-  [![Image from Gyazo](https://i.gyazo.com/f33d6cccff696ad834aab92d00846e6b.gif)](https://gyazo.com/f33d6cccff696ad834aab92d00846e6b)
+[![Image from Gyazo](https://i.gyazo.com/f33d6cccff696ad834aab92d00846e6b.gif)](https://gyazo.com/f33d6cccff696ad834aab92d00846e6b)
 
 </p>
 
@@ -79,17 +79,14 @@
 * jquery-ui-rails
 * bootstrap 4.3.1
 
-# Usage
-
-
-
 # Note
 
 
 
 # Author
 
-[takekaza](https://github.com/takekaza)
+* [GitHub](https://github.com/takekaza)
+* [Twitter](https://twitter.com/takekaza18)
 
 # Licence
 
