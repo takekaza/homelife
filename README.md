@@ -55,7 +55,7 @@
 
 <p align="center">
 
-[![Image from Gyazo](https://i.gyazo.com/60397682c49f22f7922e3d776671ebc7.gif)](https://gyazo.com/60397682c49f22f7922e3d776671ebc7)
+[![Image from Gyazo](https://i.gyazo.com/f33d6cccff696ad834aab92d00846e6b.gif)](https://gyazo.com/f33d6cccff696ad834aab92d00846e6b)
 
 </p>
 
