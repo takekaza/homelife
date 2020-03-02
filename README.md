@@ -13,7 +13,7 @@
 # Demo
 
 
-# Features
+# :key: Features
 
 <h3 align="center">〜 投稿一覧 〜</h3>
 
@@ -29,6 +29,14 @@
 <p align="center">
 
 [![Image from Gyazo](https://i.gyazo.com/3952ef0a382f18ff97af6e5f49e9fad6.gif)](https://gyazo.com/3952ef0a382f18ff97af6e5f49e9fad6)
+
+</p>
+
+<h3 align="center">〜 Instagramer 一覧 〜</h3>
+
+<p align="center">
+
+[![Image from Gyazo](https://i.gyazo.com/94638900cc7eeab85d51e4d177267024.gif)](https://gyazo.com/94638900cc7eeab85d51e4d177267024)
 
 </p>
 
@@ -53,10 +61,6 @@
 * bootstrap 4.3.1
 
 # Usage
-
-
-
-# Install
 
 
 
