@@ -78,15 +78,13 @@
 * jquery-ui-rails
 * bootstrap 4.3.1
 
-# Note
-
-
+<!-- # Note -->
 
 # Author
 
 * [GitHub](https://github.com/takekaza)
 * [Twitter](https://twitter.com/takekaza18)
 
-# Licence
+<!-- # Licence
 
-[MIT]()
+[MIT]() -->
