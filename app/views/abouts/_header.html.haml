@@ -73,8 +73,6 @@
                                   expanded: "false"}}
           User Menu
         .dropdown-menu{aria: {labelledby: "dropdownMenuLink"}}
-          =link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do
-            Log out
           =link_to new_user_session_path, class: "dropdown-item" do
             Log in
           =link_to new_user_registration_path, class: "dropdown-item" do

@@ -12,9 +12,7 @@ Rails.application.routes.draw do
   post "likes/:home_id/create", to: "likes#create", constraints: {home_id: /\d+/}, as: :likes_create
   delete "likes/:home_id/delete", to: "likes#delete", constraints: {home_id: /\d+/}, as: :likes_delete
 
-  resources :accounts, only: [:index, :search] do
-    
-  end
+  resources :accounts, only: [:index]
 
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
