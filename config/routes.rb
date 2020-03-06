@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'homes#index'
   get 'homes/indexes'
   get '/', to: 'homes#index'
-  resources :users, only: [:edit, :update]
+  resources :users, only: [:index, :edit, :update]
   resources :abouts, only: :index
   resources :homes do
     collection do
