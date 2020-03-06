@@ -1,55 +1,110 @@
 .header
-  .header-left
-    .form-search
-      %input#keyword.form-control{:placeholder => "instagramer検索", :type => "text"}/
-      = button_tag type: "button", class: "searchbtn", id: "submit" do
-        = icon('fas', 'search', class: 'searchbtn--icon')
-    -# %ul#list
-  .header-right
-    = link_to accounts_path, class: "titleac" do
-      .titleac
-        Accounts
-    .username
-      @#{current_user.name}
-    .dropdown
-      %a.dropdown-toggle{href: "#", role: "button", id: "dropdownMenuLink",
-                          data: {toggle: "dropdown"},
-                          aria: {haspopup: "true",
-                                expanded: "false"}}
-        User Menu
-      .dropdown-menu{aria: {labelledby: "dropdownMenuLink"}}
-        =link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do
-          Log out
-        =link_to edit_user_registration_path(current_user), class: "dropdown-item" do
-          Edit user
-  %a.menu
-    %span.menu__line.menu__line--top
-    %span.menu__line.menu__line--center
-    %span.menu__line.menu__line--bottom
-  %nav.navbar
+  - if user_signed_in?
+    .header-left
+      .form-search
+        = form_with(url: search_homes_path, local: true, method: :get, id: "keyword") do |form| 
+          = form.text_field :keyword, placeholder: "投稿を検索", class: "form-control" 
+          = button_tag type: "submit", class: "searchbtn" do
+            = icon('fas', 'search', class: 'searchbtn--icon')
+    .header-right
+      = link_to accounts_path, class: "titleac" do
+        .titleac
+          Accounts
+      .username
+        @#{current_user.name}
+      .dropdown
+        %a.dropdown-toggle{href: "#", role: "button", id: "dropdownMenuLink",
+                            data: {toggle: "dropdown"},
+                            aria: {haspopup: "true",
+                                  expanded: "false"}}
+          User Menu
+        .dropdown-menu{aria: {labelledby: "dropdownMenuLink"}}
+          =link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do
+            Log out
+          =link_to edit_user_registration_path(current_user), class: "dropdown-item" do
+            Edit user
+    %a.menu
+      %span.menu__line.menu__line--top
+      %span.menu__line.menu__line--center
+      %span.menu__line.menu__line--bottom
+    %nav.navbar
 
-    %button.navbar-toggler{type: "button",
-                          data: {toggle: "collapse",
-                                  target: "#navbarMenu"},
-                          aria: {controls: "navbarMenu",
-                                  expanded: "false",
-                                  label: "Toggle navigation"}}
-    .navbar__wrap
-      %ul.navbar__menu
-        %li.navbar__menu--box
-          =link_to abouts_path, class: "navbar__menu--box--about" do
-            HomeLifeとは？
-        %li.navbar__menu--box
-          =link_to accounts_path, class: "navbar__menu--box--accounts" do
-            Instagramer一覧
-        %li.navbar__menu--box
-          =link_to "#", class: "navbar__menu--box--news" do
-            News
-        %li.navbar__menu--box
-          =link_to homes_indexes_path, class: "navbar__menu--box--users" do
-            投稿一覧
-        %li.navbar__menu--box
-          =link_to root_path, class: "navbar__menu--box--top" do
-            Top
-        
-      .hero
+      %button.navbar-toggler{type: "button",
+                            data: {toggle: "collapse",
+                                    target: "#navbarMenu"},
+                            aria: {controls: "navbarMenu",
+                                    expanded: "false",
+                                    label: "Toggle navigation"}}
+      .navbar__wrap
+        %ul.navbar__menu
+          %li.navbar__menu--box
+            =link_to abouts_path, class: "navbar__menu--box--about" do
+              HomeLifeとは？
+          %li.navbar__menu--box
+            =link_to accounts_path, class: "navbar__menu--box--accounts" do
+              Instagramer一覧
+          %li.navbar__menu--box
+            =link_to "#", class: "navbar__menu--box--news" do
+              News
+          %li.navbar__menu--box
+            =link_to homes_indexes_path, class: "navbar__menu--box--users" do
+              投稿一覧
+          %li.navbar__menu--box
+            =link_to root_path, class: "navbar__menu--box--top" do
+              Top
+          
+        .hero
+  - else
+    .header-left
+      .form-search
+        = form_with(url: new_user_session_path, local: true, method: :get, id: "keyword") do |form| 
+          = form.text_field :keyword, placeholder: "投稿を検索", class: "form-control" 
+          = button_tag type: "submit", class: "searchbtn" do
+            = icon('fas', 'search', class: 'searchbtn--icon')
+    .header-right
+      = link_to accounts_path, class: "titleac" do
+        .titleac
+          Accounts
+      .username
+      .dropdown
+        %a.dropdown-toggle{href: "#", role: "button", id: "dropdownMenuLink",
+                            data: {toggle: "dropdown"},
+                            aria: {haspopup: "true",
+                                  expanded: "false"}}
+          User Menu
+        .dropdown-menu{aria: {labelledby: "dropdownMenuLink"}}
+          =link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do
+            Log out
+          =link_to edit_user_registration_path(current_user), class: "dropdown-item" do
+            Edit user
+    %a.menu
+      %span.menu__line.menu__line--top
+      %span.menu__line.menu__line--center
+      %span.menu__line.menu__line--bottom
+    %nav.navbar
+
+      %button.navbar-toggler{type: "button",
+                            data: {toggle: "collapse",
+                                    target: "#navbarMenu"},
+                            aria: {controls: "navbarMenu",
+                                    expanded: "false",
+                                    label: "Toggle navigation"}}
+      .navbar__wrap
+        %ul.navbar__menu
+          %li.navbar__menu--box
+            =link_to abouts_path, class: "navbar__menu--box--about" do
+              HomeLifeとは？
+          %li.navbar__menu--box
+            =link_to accounts_path, class: "navbar__menu--box--accounts" do
+              Instagramer一覧
+          %li.navbar__menu--box
+            =link_to new_user_session_path, class: "navbar__menu--box--news" do
+              News
+          %li.navbar__menu--box
+            =link_to new_user_session_path, class: "navbar__menu--box--users" do
+              投稿一覧
+          %li.navbar__menu--box
+            =link_to root_path, class: "navbar__menu--box--top" do
+              Top
+          
+        .hero

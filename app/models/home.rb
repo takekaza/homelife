@@ -6,4 +6,9 @@ class Home < ApplicationRecord
   accepts_nested_attributes_for :images, allow_destroy: true
   validates :images ,presence: true
   validates :text, presence: true
+
+  def self.search(search)
+    return Home.all unless search
+    Home.where('text LIKE(?)', "%#{search}%")
+  end
 end

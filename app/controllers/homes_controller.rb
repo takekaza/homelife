@@ -29,6 +29,10 @@ class HomesController < ApplicationController
     @user_homes = Home.where(user_id: @home.user.id).where.not(id: params[:id]).limit(6)
   end
 
+  def search
+    @home = Home.search(params[:keyword])
+  end
+
   def destroy
     @home = Home.find(params[:id])
     if @home.user_id == current_user.id && @home.destroy

@@ -1,10 +1,10 @@
 .header
   .header-left
     .form-search
-      %input#keyword.form-control{placeholder: "instagramer検索", type: "text"}
-      = button_tag type: "button", class: "searchbtn", id: "submit" do
-        = icon('fas', 'search', class: 'searchbtn--icon')
-    -# %ul#list
+      = form_with(url: search_homes_path, local: true, method: :get, id: "keyword") do |form| 
+        = form.text_field :keyword, placeholder: "投稿を検索", class: "form-control" 
+        = button_tag type: "submit", class: "searchbtn" do
+          = icon('fas', 'search', class: 'searchbtn--icon')
   .header-right
     = link_to homes_indexes_path, class: "titleim" do
       .titleim
