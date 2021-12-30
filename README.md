@@ -5,7 +5,6 @@
 ### "HomeLife" is an application that allows you to post and share your lifestyle.
 ### "マイホーム購入に後悔する人が多いな"→"実際に後悔した点をこれから購入を考えている人向けに共有できたらいいな" がきっかけです。
 ### 《機能》 新規登録 / ログイン / ログアウト / 複数写真文章の投稿(文字数制限あり) / 投稿者のみ編集や削除可能 / いいね機能 / 検索機能 / ドロップメニューのみBootstrap使用etc
-### Newsページ現在メンテナンス中:dash:
 ### RSpec/単体テスト :memo:
 # :iphone: App URL
 
