@@ -3,16 +3,15 @@
 # :house_with_garden: HomeLife
 
 ### "HomeLife" is an application that allows you to post and share your lifestyle.
-### "マイホーム購入に後悔する人が多いな"→"実際に後悔した点をこれから購入を考えている人向けに共有できたらいいな" から始まり、気軽に投稿や共有できるサービスです。
-### その他ライフスタイルに関わるものでも、記載されてるInstagramerの情報を引用してでも、良かったら投稿・共有してみてください:sparkles:
+### "マイホーム購入に後悔する人が多いな"→"実際に後悔した点をこれから購入を考えている人向けに共有できたらいいな" がきっかけです。
 ### 《機能》 新規登録 / ログイン / ログアウト / 複数写真文章の投稿(文字数制限あり) / 投稿者のみ編集や削除可能 / いいね機能 / 検索機能 / ドロップメニューのみBootstrap使用etc
 ### Newsページ現在メンテナンス中:dash:
 ### RSpec/単体テスト :memo:
 # :iphone: App URL
 
-### **http://18.182.81.149/**
+<!-- ### **http://18.182.81.149/**
 ### test account → email : test@com / pass : homelife
-### Please try to login. :smile:
+### Please try to login. :smile: -->
 
 # :key: Features
 
@@ -85,7 +84,7 @@
 # Author
 
 * [GitHub](https://github.com/takekaza)
-* [Twitter](https://twitter.com/takekaza18)
+<!-- * [Twitter](https://twitter.com/takekaza18) -->
 
 <!-- # Licence
 
